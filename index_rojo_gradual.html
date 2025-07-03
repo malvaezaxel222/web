@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ChocoFeliz - Cajita Feliz Dulce Sorpresa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+      scroll-behavior: smooth;
+    }
+    section {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    header {
+      background: #fff;
+      color: #8B0000;
+      padding: 20px;
+      text-align: center;
+      font-size: 2.5em;
+      font-weight: bold;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header img {
+      max-height: 80px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    nav {
+      background: #660000;
+      text-align: center;
+      padding: 10px 0;
+      position: sticky;
+      top: 80px;
+      z-index: 9;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      color: #FFD700;
+    }
+    .hero, .product, .slogan, .contact {
+      background: linear-gradient(to bottom, #B22222, #8B0000, #330000, #000);
+      color: white;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 15px;
+    }
+    .hero p, .product p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .product h2 {
+      color: #FFD700;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: #8B0000;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+      margin-top: 25px;
+    }
+    .btn:hover {
+      background: #ffd700;
+      color: #330000;
+    }
+    .slogan {
+      font-style: italic;
+      font-size: 2em;
+      color: #fffacd;
+    }
+    .contact h2 {
+      font-size: 2.5em;
+      color: #FFD700;
+      margin-bottom: 20px;
+    }
+    .contact p {
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="ChocoFeliz Logo" style="max-height: 140px;" />
+    ChocoFeliz
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#producto">Producto</a>
+    <a href="#frase">Frase</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <h1>Cajita Feliz Dulce Sorpresa</h1>
+    <p>¡Vive la experiencia ChocoFeliz! Sumérgete en un mundo de dulzura, color y felicidad. Nuestra Cajita Feliz Dulce Sorpresa está llena de chocolates irresistibles, confites y gomitas que harán sonreír tu día.</p>
+    <a href="#producto" class="btn">Descúbrela ahora</a>
+  </section>
+
+  <section class="product" id="producto">
+    <h2>¡Descubre la Cajita Feliz Dulce Sorpresa!</h2>
+    <p>Una caja llena de colores suaves y vibrantes, bombones, tabletas de chocolate y confites. Perfecta para regalar o disfrutar en tus momentos especiales. ¡Porque la vida sabe mejor con chocolate!</p>
+    <div class="gallery">
+      <img src="cajafeliz.png" alt="Cajita Feliz" />
+    </div>
+    <a href="#tienda" class="btn">¡Quiero la mía!</a>
+  </section>
+
+  <section class="slogan" id="frase">
+    “Felicidad en cada mordida.”
+  </section>
+
+  <section class="contact" id="contacto">
+    <h2>Contacto</h2>
+    <p>+52 1 56 3714 1749</p>
+  </section>
+
+  <section class="hero" id="tienda">
+    <h1>Tienda ChocoFeliz</h1>
+    <p style="font-size: 1.5em; color: #FFD700;">¡Próximamente disponible en línea!</p>
+    <p style="font-size: 1.1em; color: #eee;">Estamos preparando la mejor experiencia de compra para ti.</p>
+    <a href="#inicio" class="btn">Volver al inicio</a>
+  </section>
+
+</body>
+</html>
